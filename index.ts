@@ -68,7 +68,7 @@ let thread: Thread = {id:'1', name:'bill', messages: ['one']};
 let thread2: Thread = {id:'2', name:'joe', messages: ['two']};
 let entities: ThreadsEntities = {};
 
-entities = Object.assign({}, {   [thread.id]: thread }, {   [thread2.id]: thread2 } );
+entities = Object.assign({}, { [thread.id]: thread }, { [thread2.id]: thread2 } );
 
 console.log("running 2");
 console.log( JSON.stringify(entities) );
