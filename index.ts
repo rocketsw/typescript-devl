@@ -2,6 +2,14 @@ import { Subject } from 'rxjs';
 import { scan } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs';
 
+// Import stylesheets
+import './style.css';
+
+// Write TypeScript code!
+const appDiv: HTMLElement = document.getElementById('app');
+appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+
+// Using RxJS.  output to console
 const subject = new Subject();
 //scan example building an object over time
 const example = subject.pipe(
